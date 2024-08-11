@@ -76,7 +76,10 @@ header.sticky svg, header.sticky .logo,header.sticky ul li a{
 
 @media only screen and (max-width: 800px) {
     body{
-        min-height: 100vh;
+        height: 100vh;
+    }
+    .carousel-inner img {
+        height: 60vh;
     }
     .hideOnMobile{
         display: none;
