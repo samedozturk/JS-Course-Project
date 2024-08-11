@@ -75,6 +75,9 @@ header.sticky svg, header.sticky .logo,header.sticky ul li a{
 
 
 @media only screen and (max-width: 800px) {
+    body{
+        min-height: 100vh;
+    }
     .hideOnMobile{
         display: none;
     }
@@ -100,6 +103,7 @@ header.sticky svg, header.sticky .logo,header.sticky ul li a{
 }
 .sidebar li{
     width: 100%;
+    text-align: center;
 }
 .sidebar a{
     width: 100%;
@@ -147,8 +151,35 @@ header.sticky svg, header.sticky .logo,header.sticky ul li a{
     transform: scale(1.15);
     transition: 0.5s;
 }
-
-
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+.footer-container h2{
+    text-align: center;
+}
+.footer-container .footer-btn a{
+    color: gray;
+    text-decoration: none;
+    font-size: x-large;
+    margin: 25px;
+}
+.footer-container .footer-btn a:hover{
+    color: darkslategrey;
+}
+.social ul li{
+    list-style: none;
+}
+.social ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
 
 
 
@@ -164,7 +195,7 @@ header.sticky svg, header.sticky .logo,header.sticky ul li a{
     font-size: 16px;
     transition: color 0.3s ease;
 }
-.icerik-basliklari button::after {
+.icerik-basliklari button::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -176,7 +207,7 @@ header.sticky svg, header.sticky .logo,header.sticky ul li a{
     transform-origin: left;
     transition: transform 0.5s ease;
 }
-.icerik-basliklari button:hover::after {
+.icerik-basliklari button:hover::after{
     transform: scaleX(1);
 }
 

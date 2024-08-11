@@ -6,14 +6,13 @@ window.addEventListener("scroll",function (){
 function showSidebar(){
     const sidebar = document.querySelector(".sidebar")
     //sidebar.style.display= "flex"
-    sidebar.style.width = "250px";
+    sidebar.style.width = "270px";
 }
 
 function hideSidebar(){
     const sidebar = document.querySelector(".sidebar")
     //sidebar.style.display= "none";
     sidebar.style.width = "0"; // daha yumuşak bir geçiş için böyle yaptım
-    sidebar.style.backdropFilter = "none";
 }
 
 function addContent(konu){
@@ -51,5 +50,3 @@ function activeButton(y){
         }
     })
 }
-
-//js ile eklediğim metin biraz daha yumuşak gelsin
