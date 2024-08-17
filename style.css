@@ -77,6 +77,8 @@ header.sticky svg, header.sticky .logo,header.sticky ul li a{
 @media only screen and (max-width: 800px) {
     body{
         height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
     }
     .carousel-inner img {
         height: 60vh;
@@ -159,14 +161,25 @@ header.sticky svg, header.sticky .logo,header.sticky ul li a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 100px;
+    padding: 75px 75px 50px 75px;
     gap: 20px;
+    background-color: #F6F6F6;
 }
 .footer-container h2{
     text-align: center;
 }
+.footer-container .footer-btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
 .footer-container .footer-btn a{
+    text-align: center;
+    padding: 0;
+    width: 125px;
+    height: 36px;
     color: gray;
     text-decoration: none;
     font-size: x-large;
@@ -182,8 +195,20 @@ header.sticky svg, header.sticky .logo,header.sticky ul li a{
     display: flex;
     flex-direction: row;
     gap: 25px;
+    margin: 0;
+    padding: 0;
 }
 
+.footer-container .social ul li svg{
+    width: 25px;
+    height: 25px;
+}
+.footer-container .social ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
