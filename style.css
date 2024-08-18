@@ -82,7 +82,9 @@ header.sticky .nav svg, header.sticky .logo,header.sticky .nav li a{
         overflow-x: hidden;
     }
     .footer-container{
-        margin: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
     .carousel-inner img {
         height: 60vh;
