@@ -23,13 +23,13 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     transition: 0.6s;
     padding: 30px 100px;
     z-index: 10000;
 }
 header.sticky{
-    padding: 5px 100px;
+    padding: 5px 80px;
     background: #fff;
 }
 
@@ -85,6 +85,19 @@ header.sticky .nav svg, header.sticky .logo,header.sticky .nav li a{
     }
     .hideOnMobile{
         display: none;
+    }
+    #content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #content .icerik-basliklari{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 }
 
@@ -166,7 +179,7 @@ header.sticky .nav svg, header.sticky .logo,header.sticky .nav li a{
     gap: 20px;
     background-color: #F6F6F6;
 }
-.footer-container h2{
+.footer-container h2, .footer-container p{
     text-align: center;
 }
 .footer-container .footer-btn{

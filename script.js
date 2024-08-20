@@ -4,7 +4,7 @@ window.addEventListener("scroll",function (){
 })
 
 function showSidebar(){
-    const sidebar = document.querySelector(".sidebar")
+    const sidebar = document.querySelector(".sidebar");
     //sidebar.style.display= "flex"
     sidebar.style.width = "270px";
 }
@@ -50,3 +50,11 @@ function activeButton(y){
         }
     })
 }
+
+const sidebar = document.querySelector(".sidebar");
+const btn = document.querySelector("#menu-btn");
+window.addEventListener("click",function (event){
+    if(!sidebar.contains(event.target) && !btn.contains(event.target)){
+        sidebar.style.width = "0";
+    }
+})
