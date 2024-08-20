@@ -154,7 +154,7 @@ header.sticky .nav svg, header.sticky .logo,header.sticky .nav li a{
 }
 .icerik-basliklari button{
     color: gray;
-    background-color: white;
+    background-color: transparent;
     border: none;
     font-size: large;
     transition: 0.6s;

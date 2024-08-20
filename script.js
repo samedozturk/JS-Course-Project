@@ -4,9 +4,15 @@ window.addEventListener("scroll",function (){
 })
 
 function showSidebar(){
+    const screenwidth = window.innerWidth;
     const sidebar = document.querySelector(".sidebar");
     //sidebar.style.display= "flex"
-    sidebar.style.width = "270px";
+    if(screenwidth < 800){
+        sidebar.style.width = "50%";
+    }
+    else{
+        sidebar.style.width = "270px";
+    }
 }
 
 function hideSidebar(){
