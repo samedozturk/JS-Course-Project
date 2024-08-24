@@ -6,7 +6,7 @@
 .carousel {
     position: relative;
     padding: 0;
-    margin: 20px 0 8% 0;
+    margin: 0 0 8% 0;
 }
 *{
     margin: 0;
@@ -79,8 +79,8 @@ header.sticky .nav svg, header.sticky .logo,header.sticky .nav li a{
     fill: black;
 }
 body.dark-mode header.sticky .nav svg,body.dark-mode header.sticky .logo,body.dark-mode header.sticky .nav li a{
-    color: gray;
-    fill: gray;
+    color: #fff;
+    fill: #fff;
 }
 body.dark-mode{
     background-color: #292929;
@@ -138,6 +138,14 @@ body.dark-mode{
 .sidebar a{
     width: 100%;
 }
+body.dark-mode .sidebar a, body.dark-mode .sidebar a svg{
+    color: #fff;
+    fill: #fff;
+}
+body.dark-mode .sidebar a:hover, body.dark-mode .sidebar a svg:hover{
+    color: gray;
+    fill: gray;
+}
 .icerik-basliklari{
     display: flex;
     justify-content: space-evenly;
@@ -160,6 +168,9 @@ body.dark-mode{
     margin-inline-start: 0;
     margin-inline-end: 0;
     unicode-bidi: isolate;
+}
+body.dark-mode #icerik p {
+    color: #fff;
 }
 #content{
     margin-top: 25px;
@@ -213,6 +224,9 @@ body.dark-mode .footer-container{
     font-size: x-large;
     margin: 25px;
 }
+body.dark-mode .footer-container .footer-btn a{
+    color: #fff;
+}
 .footer-container .footer-btn a:hover{
     color: darkslategrey;
 }
@@ -226,7 +240,9 @@ body.dark-mode .footer-container{
     margin: 0;
     padding: 0;
 }
-
+body.dark-mode .footer-container .metin{
+    color: #fff;
+}
 .footer-container .social ul li svg{
     width: 25px;
     height: 25px;
