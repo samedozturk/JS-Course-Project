@@ -111,6 +111,44 @@ body.dark-mode{
         align-items: center;
         gap: 10px;
     }
+    #theme-btn{
+        position: fixed;
+        left: 2%;
+        bottom: 3%;
+        border-radius: 50%;
+        border: 2px solid #295F98;
+        width: 45px;
+        height: 45px;
+        background-color: #295F98;
+        cursor: pointer;
+        z-index: 20000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        transition: opacity 0.2s ease;
+    }
+    #theme-btn.hide{
+        opacity: 0.3;
+    }
+    body.dark-mode #theme-btn{
+        background-color: #1F316F;
+        border-color: #295F98;
+    }
+    #theme-btn svg{
+        fill: white;
+    }
+    #theme-btn svg{
+        margin: 0;
+        padding: 0;
+    }
+}
+#theme-btn{
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}
+#theme-btn.hide{
+    opacity: 0.3;
 }
 
 .sidebar{
@@ -259,27 +297,28 @@ body.dark-mode .footer-container .metin{
     right: 2%;
     bottom: 3%;
     border-radius: 50%;
-    border: 2px solid gray;
+    border: 2px solid #295F98;
     width: 45px;
     height: 45px;
-    background-color: white;
+    background-color: #295F98;
     cursor: pointer;
     z-index: 20000;
 }
 body.dark-mode .up-button{
-    background-color: #4e4e4e;
+    background-color: #1F316F;
+    border-color: #295F98;
 }
 .up-button svg{
-    fill: gray;
+    fill: white;
 }
 body.dark-mode .up-button svg{
     fill: white;
 }
 .up-button svg:hover{
-    fill: black ;
+    fill: darkgray ;
 }
 body.dark-mode .up-button svg:hover{
-    fill: black;
+    fill: darkslategrey;
 }
 html{
     scroll-behavior: smooth;
