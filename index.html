@@ -30,43 +30,18 @@
 </header>
 <button class="up-button" onclick="bactotop()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></button>
 
-<div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<div class="carousel">
+    <div class="slides">
+        <img src="./İmages/anıtkabir.jpg" alt="image-1">
+        <img src="./İmages/kuş-cenneti.jpg" alt="image-2">
+        <img src="./İmages/ankara-kalesi.jpg" alt="image-3">
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./İmages/anıtkabir.jpg" class="carousel-img d-block w-100" alt="Anıtkabir">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="./İmages/kuş-cenneti.jpg" class="carousel-img d-block w-100" alt="kuş cenneti">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="./İmages/ankara-kalesi.jpg" class="carousel-img d-block w-100" alt="ankara kalesi">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-            </div>
-        </div>
+    <div class="aciklama">
+        <h1>ankara</h1>
+        <p>divasdasd</p>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+    <button class="prevButton" onclick="nextImg()"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M561-240 320-481l241-241 43 43-198 198 198 198-43 43Z"/></svg></button>
+    <button class="nextButton" onclick="prevImg()"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/></svg></button>
 </div>
 
 <div id="content">

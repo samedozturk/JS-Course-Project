@@ -109,5 +109,52 @@ function changetheme(){
     }
 }
 
-
-
+let sliderimg = document.querySelectorAll('.carousel .slides img');
+let indexofimg = 0;
+let intervalId;
+window.addEventListener("DOMContentLoaded", initSlider);
+function initSlider(){
+    if (sliderimg.length > 0){
+        sliderimg[indexofimg].classList.add("active");
+        carouselAddcontent(indexofimg);
+        autoSlider();
+    }
+}
+function autoSlider(){
+    if(intervalId){
+        clearInterval(intervalId);
+    }
+    intervalId = setInterval(nextImg, 5000);
+}
+function prevImg(){
+    sliderimg[indexofimg].classList.remove("active");
+    indexofimg = (indexofimg + 2) % sliderimg.length;
+    sliderimg[indexofimg].classList.add("active")
+    carouselAddcontent(indexofimg);
+    autoSlider();
+}
+function nextImg(){
+    sliderimg[indexofimg].classList.remove("active");
+    indexofimg = (indexofimg + 1) % sliderimg.length;
+    sliderimg[indexofimg].classList.add("active");
+    carouselAddcontent(indexofimg);
+    autoSlider();
+}
+function carouselAddcontent(index){
+    let p = document.querySelector('.carousel .aciklama p');
+    let h = document.querySelector('.carousel .aciklama h1');
+    switch (index){
+        case 0:
+            h.innerHTML = `Anıtkabir`;
+            p.innerHTML = `Anıtkabir hakkında`;
+            break;
+        case 1:
+            h.innerHTML = `Kuş Cenneti`;
+            p.innerHTML = `Kuş Cenneti hakkında`;
+            break;
+        case 2:
+            h.innerHTML = `Ankara Kalesi`;
+            p.innerHTML = `Ankara Lalesi Hakkında`
+            break;
+    }
+}
