@@ -48,7 +48,7 @@ body.dark-mode .nextButton svg, body.dark-mode .prevButton svg{
     text-align: center;
 }
 @keyframes fade {
-    from {opacity: 0.5}
+    from {opacity: 0}
     to {opacity: 1}
 }
 .aciklama h1, .aciklama p{
@@ -75,6 +75,18 @@ header{
     padding: 1.5% 8%;
     z-index: 10000;
     background-color: rgb(41, 95, 152, 0.9);
+}
+#selectLanguage{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.6s;
+}
+#selectLanguage option{
+    color: black;
+}
+#selectLanguage:hover{
+    color: black;
 }
 body.dark-mode header{
     background-color: rgb(33, 25, 81, 0.9);
@@ -112,7 +124,7 @@ header ul li{
 
 header ul li a, header svg{
     position: relative;
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
     color: #EEEEEE;
     fill: #EEEEEE;
@@ -124,11 +136,11 @@ header a:hover, header svg:hover{
     color: black;
     fill: black;
 }
-header.sticky .nav svg, header.sticky .logo,header.sticky .nav li a{
+header.sticky .nav svg, header.sticky .logo,header.sticky .nav li a, header.sticky #selectLanguage{
     color: black;
     fill: black;
 }
-body.dark-mode header.sticky .nav svg,body.dark-mode header.sticky .logo,body.dark-mode header.sticky .nav li a{
+body.dark-mode header.sticky .nav svg,body.dark-mode header.sticky .logo,body.dark-mode header.sticky .nav li a,body.dark-mode header.sticky #selectLanguage{
     color: #fff;
     fill: #fff;
 }
@@ -136,11 +148,15 @@ body.dark-mode{
     background-color: #292929;
     color: gray;
 }
-
+@media only screen and (max-width: 320px) {
+    header .logo{
+        letter-spacing: 1px;
+        font-size: 1.5em;
+    }
+}
 @media only screen and (max-width: 840px) {
     body{
         max-width: 100vw;
-        overflow-x: hidden;
     }
     .carousel img{
         height: 60vh;
@@ -163,8 +179,8 @@ body.dark-mode{
     }
     #theme-btn{
         position: fixed;
-        right: 2%;
-        bottom: 12%;
+        right: 10px;
+        bottom: 72px;
         border-radius: 50%;
         border: 2px solid #295F98;
         width: 45px;
@@ -225,6 +241,10 @@ body.dark-mode{
 }
 .sidebar a{
     width: 100%;
+    color: black;
+}
+.sidebar a svg{
+    fill: black;
 }
 body.dark-mode .sidebar a, body.dark-mode .sidebar a svg{
     color: #fff;
@@ -344,8 +364,8 @@ body.dark-mode .footer-container .metin{
 
 .up-button{
     position: fixed;
-    right: 2%;
-    bottom: 3%;
+    right: 10px;
+    bottom: 20px;
     border-radius: 50%;
     border: 2px solid #295F98;
     width: 45px;
